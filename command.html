@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>command</title>
+</head>
+<body>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Register </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">firstName </label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="FN" placeholder="firstName ">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">lastName</label>
+                                <input type="text" class="form-control form-control-sm mr-1" id="LN" placeholder="lastName">
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Identifiant</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="ID" placeholder="Identifiant">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="pwd" placeholder="Password">
+                            </div>
+                            
+    
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Confirm your Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Confirm your Password">
+                            </div>
+                            <div class="form-group col-sm-4">    
+                                <select class="form-control" id="Grade">
+                                    <option >Lieutenant À Colonel</option>
+                                    <option >Chef d'Escadron</option>
+                                    <option >Capitaine</option>
+                                    <option >Lieutenant</option>
+                                    <option >Combatant</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Register</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- le formulaire d'inscription -->
+    <div id="formModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="User name">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="" id="title" class="navbar-brand mr-auto"><i class="fa fa-computer"> Ced|deV</i> </a>
+            <div class="collapse navbar-collapse" id="Navbar"> 
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link btn btn-" role="button"> <i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="command.html" class="nav-link"><i class="fa fa-terminal"></i> Commande</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="aboutus.html " class="nav-link"><i class="fa fa-user"></i> About Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text btn btn-info my_btn">
+                    <a data-toggle="modal" data-target="#formModal">
+                    <span class="fa fa-sign-in"></span> Se Connecter</a>
+                </span>
+                
+                <span class="navbar-text btn btn-info my_btn">
+                    <a data-toggle="modal" data-target="#loginModal" >
+                    <span class="fa fa-sign-in"></span> S'inscrire</a>
+                </span>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </nav>
+    <div class="row bg-info my_foo">
+        <div class="col-7">
+            <span><i class="fa fa-copyright">CopyRight 4GI</i> </span>
+        </div>
+        <div class="col-5">
+            <span><i>Ced|deV</i> </span>
+        </div>
+    </div>
+
+   
+
+
+
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
